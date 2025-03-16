@@ -1,0 +1,25 @@
+# Core dependencies
+torch>=2.0.0
+transformers>=4.36.0
+datasets>=2.14.0
+trl>=0.7.4
+peft>=0.6.0
+accelerate>=0.23.0
+bitsandbytes>=0.41.0
+
+# Unsloth - install with CUDA support based on your system
+# For CUDA 11.8: "unsloth[cu118] @ git+https://github.com/unslothai/unsloth.git"
+# For CUDA 12.1: "unsloth[cu121] @ git+https://github.com/unslothai/unsloth.git"
+# For CUDA 12.2: "unsloth[cu122] @ git+https://github.com/unslothai/unsloth.git"
+# For CPU only: "unsloth[cpu] @ git+https://github.com/unslothai/unsloth.git"
+
+# Optional dependencies for notebooks
+jupyter>=1.0.0
+ipykernel>=6.0.0
+
+# Optional dependencies for model conversion
+gguf>=0.1.0
+protobuf>=3.20.0
+
+# Optional dependencies for visualization
+matplotlib>=3.7.0

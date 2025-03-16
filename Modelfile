@@ -1,0 +1,26 @@
+FROM my_model.gguf
+
+# You can customize the system prompt based on your fine-tuned model's purpose
+SYSTEM You are a helpful assistant that provides accurate and informative responses based on your training.
+
+# Optional: Add a template for chat-style interactions
+# TEMPLATE """
+# {{ if .System }}{{ .System }}{{ end }}
+# 
+# {{ range .Messages }}
+# {{- if eq .Role "user" }}
+# USER: {{ .Content }}
+# {{- else if eq .Role "assistant" }}
+# ASSISTANT: {{ .Content }}
+# {{- end }}
+# {{ end }}
+# 
+# USER: {{ .Prompt }}
+# ASSISTANT: 
+# """
+
+# Optional: Set parameters for generation
+# PARAMETER temperature 0.7
+# PARAMETER top_p 0.9
+# PARAMETER top_k 40
+# PARAMETER stop "USER:"
