@@ -25,7 +25,7 @@ LORA_ALPHA = 16        # LoRA alpha parameter
 LORA_DROPOUT = 0       # LoRA dropout (0 is optimized)
 
 # Training configuration
-BATCH_SIZE = 1         # Batch size per device
+BATCH_SIZE = 2         # Batch size per device
 GRADIENT_ACCUMULATION_STEPS = 4  # Accumulate gradients over multiple steps
 LEARNING_RATE = 2e-4   # Learning rate
 MAX_STEPS = 100        # Number of training steps (set to None to train for full epochs)
